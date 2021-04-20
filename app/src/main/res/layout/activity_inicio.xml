@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inicio">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="179dp"
+        android:layout_marginStart="178dp"
+        android:layout_marginTop="60dp"
+        android:text="Triki Toe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_play"
+        android:layout_width="105dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginStart="153dp"
+        android:layout_marginTop="56dp"
+        android:onClick="onClick"
+        android:text="Jugar"
+        app:layout_constraintBottom_toTopOf="@+id/button_credits"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_credits"
+        android:layout_width="113dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="483dp"
+        android:layout_marginEnd="149dp"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="25dp"
+        android:onClick="onClick"
+        android:text="Créditos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_play"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

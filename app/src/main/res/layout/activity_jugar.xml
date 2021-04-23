@@ -4,46 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo"
     android:orientation="vertical"
     tools:context=".Jugar">
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:id="@+id/button_reset"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="126dp"
-            android:text="Reiniciar" />
-
-        <TextView
-            android:id="@+id/text_view_p1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Jugador 1: 0"
-            android:textSize="24sp" />
-
-        <TextView
-            android:id="@+id/text_view_p2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/text_view_p1"
-            android:text="Jugador 2: 0"
-            android:textSize="24sp" />
-
-        <Button
-            android:id="@+id/button_return"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="5dp"
-            android:onClick="onClick"
-            android:text="REGRESAR" />
-
-    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -128,5 +91,45 @@
             android:textSize="60sp" />
 
     </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="126dp"
+            android:text="Reiniciar" />
+
+        <Button
+            android:id="@+id/button_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:onClick="onClick"
+            android:text="REGRESAR" />
+
+        <TextView
+            android:id="@+id/text_view_p2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_p1"
+            android:fontFamily="sans-serif-black"
+            android:text="Jugador 2: 0"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/text_view_p1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Jugador 1: 0"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
 
 </LinearLayout>

@@ -4,15 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo"
     tools:context=".Inicio">
+
+    <Button
+        android:id="@+id/button_play"
+        android:layout_width="128dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="420dp"
+        android:onClick="onClick"
+        android:text="Jugar"
+        app:layout_constraintBottom_toTopOf="@+id/button_credits"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_credits"
+        android:layout_width="129dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="440dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="160dp"
+        android:onClick="onClick"
+        android:text="Créditos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_play"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="179dp"
-        android:layout_marginStart="178dp"
+        android:layout_marginStart="179dp"
         android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-black"
         android:text="Triki Toe"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,36 +55,20 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/button_play"
-        android:layout_width="105dp"
-        android:layout_height="43dp"
-        android:layout_marginBottom="25dp"
-        android:layout_marginEnd="153dp"
-        android:layout_marginStart="153dp"
-        android:layout_marginTop="56dp"
-        android:onClick="onClick"
-        android:text="Jugar"
-        app:layout_constraintBottom_toTopOf="@+id/button_credits"
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="207dp"
+        android:layout_height="231dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_play"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button_credits"
-        android:layout_width="113dp"
-        android:layout_height="45dp"
-        android:layout_marginBottom="483dp"
-        android:layout_marginEnd="149dp"
-        android:layout_marginStart="149dp"
-        android:layout_marginTop="25dp"
-        android:onClick="onClick"
-        android:text="Créditos"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_play"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/inicio"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
